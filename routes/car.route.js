@@ -4,7 +4,7 @@ const { CarModel } = require("../models/car.model");
 
 const carRouter = express.Router();
 
-// carRouter.use(auth);
+carRouter.use(auth);
 
 //add secone hand cars with specification
 carRouter.post("/addcar", async (req, res) => {
